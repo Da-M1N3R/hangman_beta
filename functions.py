@@ -24,6 +24,6 @@ def check(sw, correct, wrong, guess):
     else:
         wrong.append(guess)
         reset(sw, correct)
-    print(f'Correct characters: {correct}')
+    # print(f'Correct characters: {correct}')
     print(f'Wrong characters: {wrong}')
 
