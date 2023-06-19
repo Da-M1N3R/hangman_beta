@@ -21,11 +21,12 @@ while game:
     print('++++++++++++++++++++++++++')
     chance_left = chances - len(wrong)
     print(f'Chances left: {chance_left}')
+    print(f'Wrong characters: {wrong}')
     print(hang_block[chance_left])
-
     if set(correct) == sw_check:
-        print(correct)
-        print(sw_check)
+        # print(correct)
+        # print(sw_check)
+        print(reset(secret_word, correct))
         print('XXXXXXXXXXXX........Congratulations........XXXXXXXXXXX')
         break
     elif chance_left <= 0:
@@ -34,6 +35,7 @@ while game:
         print(reset(secret_word, correct))
         guess = input('Input your guess...')
         check(sw, correct, wrong, guess)
+    print('\n')
 
 
 
